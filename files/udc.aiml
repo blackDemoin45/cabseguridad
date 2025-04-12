@@ -1,15 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <aiml>
 
   <category>
     <pattern>*</pattern>
-    <template>Eso no lo se</template>
+    <template>Eso no lo se, hasta luego</template>
   </category>    
 
 <category>
     <pattern>Hola</pattern>
-    <template>Bienvenido a mi mundo de la ciberseguridad, estas listo para entrar?</template>
-  </category>
+    <template>
+        <random>
+            <li>Hola, ¿estás listo para aprender ciberseguridad?</li>
+            <li>¡Bienvenido! Hoy descubrirás algo nuevo sobre ciberseguridad</li>
+            <li>¿Preparado para mejorar tus habilidades en ciberseguridad?</li>
+            <li>¡Empecemos! El mundo de la ciberseguridad te espera</li>
+        </random>
+    </template>
+ </category>
   
  <category>
     <pattern>amenazas</pattern>
@@ -17,8 +24,8 @@
   </category>
   
 <category>
-    <pattern>OpsSec</pattern>
-    <template>Las OpsSec estan compuestas por Antivirus, firewall, VPN, cifrado, autenticación de dos factores, sistemas de detección de intrusiones (IDS), sistemas de prevención de intrusiones (IPS)</template>
+    <pattern>Opsec</pattern>
+    <template>Las Opsec estan compuestas por Antivirus, firewall, VPN, cifrado, autenticación de dos factores, sistemas de detección de intrusiones (IDS), sistemas de prevención de intrusiones (IPS)</template>
   </category>
   
   <category>
@@ -33,13 +40,38 @@
   
     <category>
       <pattern>tiposHacker</pattern>
-      <template>hackers de sombrero blanco, negro, gris, rojo, azul y verde</template>
+      <template>
+          <ol>
+              <li>Sombrero blanco (buenos)</li>
+              <li>Sombrero negro (malos)</li>
+              <li>Sombrero gris (buenos)</li>
+              <li>Sombrero rojo (buenos)</li>
+          </ol></template>
+  </category>
+
+    <category>
+      <pattern>* amenazas *</pattern>
+      <template><srai>Amenazas</srai></template>
+  </category>
+
+    <category>
+      <pattern>* opsec</pattern>
+      <template><srai>Opsec</srai></template>
+  </category>
+
+    <category>
+      <pattern>* tipos * hackers </pattern>
+      <template><srai>tiposHacker</srai></template>
   </category>
   
     <category>
-      <pattern>tiposHacker</pattern>
-      <template>hackers de sombrero blanco, negro, gris, rojo, azul y verde</template>
+      <pattern>* hacker</pattern>
+      <template><srai>hacker</srai></template>
   </category>
   
-
+    <category>
+      <pattern>* es un tipo de ransomeware *</pattern>
+      <template> el <star index = "1"/> no es una amenaza grave</template>
+  </category>
+  
 </aiml>
