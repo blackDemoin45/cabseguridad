@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category>
+    <pattern>*</pattern>
+    <template>Eso no lo se</template>
+  </category>    
+
+<category>
+    <pattern>Hola</pattern>
+    <template>Bienvenido a mi mundo de la ciberseguridad, estas listo para entrar?</template>
+  </category>
+  
+ <category>
+    <pattern>amenazas</pattern>
+    <template>Ransomware, malware, phishing, ingeniería social, ataques DDoS</template>
+  </category>
+  
+<category>
+    <pattern>OpsSec</pattern>
+    <template>Las OpsSec estan compuestas por Antivirus, firewall, VPN, cifrado, autenticación de dos factores, sistemas de detección de intrusiones (IDS), sistemas de prevención de intrusiones (IPS)</template>
+  </category>
+  
+  <category>
+    <pattern>Principios</pattern>
+    <template>Los principios de la ciberseguridad estan relacionados con Confidencialidad, Integridad y Disponibilidad de la informacion</template>
+  </category>
+  
+    <category>
+      <pattern>Hacker</pattern>
+      <template>es una persona que tiene profundos conocimientos en informática</template>
+  </category>
+  
+    <category>
+      <pattern>tiposHacker</pattern>
+      <template>hackers de sombrero blanco, negro, gris, rojo, azul y verde</template>
+  </category>
+  
+    <category>
+      <pattern>tiposHacker</pattern>
+      <template>hackers de sombrero blanco, negro, gris, rojo, azul y verde</template>
+  </category>
+  
+
+</aiml>
